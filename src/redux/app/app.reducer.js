@@ -8,8 +8,8 @@ import {
 } from "./app.types";
 
 const initialState = {
-  pokemonInfo: {},
-  searchedPokemon: JSON.parse(localStorage.getItem("pokemonInfo")) || {},
+  pokemonInfo: JSON.parse(localStorage.getItem("pokemonInfo")) || {},
+  searchedPokemon: {},
   pokemonList: [],
   loader: false,
   page: 1,
