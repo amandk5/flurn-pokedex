@@ -5,7 +5,7 @@ import "./detailsPage.css";
 import About from "./detailsPageComponent/About";
 import BaseStats from "./detailsPageComponent/BaseStats";
 import { BsBookmark, BsFillBookmarkFill } from "react-icons/bs";
-import { Link, json } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function DetailsPage() {
   const { pokemonInfo } = useSelector((store) => store.app);
@@ -58,9 +58,8 @@ export default function DetailsPage() {
   useEffect(() => {
     // console.log(pokemonInfo);
     // check if pokemon is bookmarked or not in the ls
-    let pokemonBookmarkedArr = JSON.parse(
-      localStorage.getItem("bookmarkedPokemon")
-    );
+    let pokemonBookmarkedArr =
+      JSON.parse(localStorage.getItem("bookmarkedPokemon")) || [];
     let pokemonPresent = false;
     pokemonBookmarkedArr = pokemonBookmarkedArr.filter(
       (pokemon) => pokemon.id === pokemonInfo.id

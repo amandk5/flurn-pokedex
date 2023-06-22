@@ -42,13 +42,14 @@ export const appReducer = (state = initialState, action) => {
         ...state,
         page: state.page + 1,
       };
-    case ADD_POKEMON_INFO:
+    case ADD_POKEMON_INFO: {
       // add to ls named pokemonInfo
       localStorage.setItem("pokemonInfo", JSON.stringify(action.payload));
       return {
         ...state,
         pokemonInfo: action.payload,
       };
+    }
     default:
       return state;
   }
