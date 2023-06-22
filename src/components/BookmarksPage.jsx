@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function BookmarksPage() {
   const [bookmarkedPokemon, setBookmarkedPokemon] = useState(
-    JSON.parse(localStorage.getItem("bookmarkedPokemon") || [])
+    JSON.parse(localStorage.getItem("bookmarkedPokemon")) || []
   );
 
   // set current hovered
