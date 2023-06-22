@@ -1,0 +1,6 @@
+export const SEARCH_POKEMON = "SEARCH_POKEMON";
+export const START_LOADER = "START_LOADER";
+export const STOP_LOADER = "STOP_LOADER";
+export const GET_POKEMON_LIST = "GET_POKEMON_LIST";
+export const REACHED_BOTTOM = "REACHED_BOTTOM";
+export const ADD_POKEMON_INFO = "ADD_POKEMON_INFO";

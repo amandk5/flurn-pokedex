@@ -1,0 +1,15 @@
+.detailsPage {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0px;
+  height: 100vh;
+}
+
+.links{
+    font-size:20px;
+}
+
+.links:hover {
+  border-bottom: 5px solid black; 
+  font-weight: bold;
+}

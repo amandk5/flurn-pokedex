@@ -5,11 +5,10 @@ import {
   compose,
 } from "redux";
 import thunk from "redux-thunk";
+import { appReducer } from "./app/app.reducer";
 
 const rootReducer = combineReducers({
-  // auth: authReducer,
-  // feed: feedReducer,
-  // post: postReducer,
+  app:appReducer
 });
 
 const createComposer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
